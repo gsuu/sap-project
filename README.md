@@ -3,10 +3,12 @@
 ## REST(Representational State Transfer) 란?
 모든 요청에서 클라이언트의 상태를 URI상에서 의미가 잘 드러나게 전송한다는 의미
 
+
 ## REST api 란?
 REST기반의 웹 서비스를 의미하며, HTTP 요청정보의 결과를 단순한 XML이나 JSON등의 포맷으로 반환하는 구조로 이루어져 있습니다.
 - 첫 번째, URI는 정보의 자원을 표현해야 한다.
 - 두 번째, 자원에 대한 행위는 HTTP Method(GET, POST, PUT, DELETE)로 표현한다.
+
 
 ### ※ example
 1. GET http://hosturl/user
@@ -28,8 +30,14 @@ REST기반의 웹 서비스를 의미하며, HTTP 요청정보의 결과를 단�
 3. PUT http://hosturl/user/abc
 4. DELETE http://hosturl/user/abc
 
-## 필요한 기능
 
+## 최종 목표
+RESTapi를 이용하여 팀 경비관리 app만들기.
+- back-end : nodeJs (express, passport, mongodb),
+- front-end : vue.js or react....?
+
+
+## 필요한 기능
 1. 회원가입, 로그인 (권한: 모든 사용자)
 2. 나의 정보 (권한: 현재 사용자) - `조회 / 수정`
 2. 팀 경비관리 (권한: 모든 회원) - `조회 / 등록 / 수정 / 삭제`
@@ -51,7 +59,9 @@ REST기반의 웹 서비스를 의미하며, HTTP 요청정보의 결과를 단�
 
 ## Test Tools
 - [API test Postman](https://scotch.io/tutorials/write-api-tests-with-postman-and-newman)
+
 ![screenshot](postman-sample.png)
 
 - [Robo Mongo](https://robomongo.org/)
+
 ![screenshot](robomongo-sample.png)
